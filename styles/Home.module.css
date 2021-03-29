@@ -23,7 +23,7 @@
 }
 
 .logo {
-    width: 100%;
+    width: 100vw;
     max-width: 1200px;
     margin: -6vw 0 -12vw 0;
     height: calc(100px + 40vw);
