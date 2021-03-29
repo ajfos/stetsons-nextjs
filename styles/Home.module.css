@@ -18,7 +18,7 @@
 }
 
 .tagLine {
-    font-size: calc(14px + 1.5vw);
+    font-size: calc(12px + 1.5vw);
     z-index: 1;
 }
 
@@ -33,8 +33,8 @@
 
 @media (max-width: 500px) {
     .logo {
-        
-        width: 100%;
+        margin: -6vw 0 -12vw -15px;
+        width: 80%;
     }
 }
 
@@ -53,7 +53,7 @@
 
 @media (max-width: 400px) {
     .socialIcon {
-        font-size: 2rem;
+        width: 45px;
         padding: 0 5px 0 5px;
     }
 }

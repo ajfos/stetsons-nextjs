@@ -16,8 +16,8 @@ export default function MusicInfo ({ numberToShow = 0 }) {
     const moreImage = releaseData.releases[Math.floor(Math.random() * Math.floor(releaseData.releases.length - numberToShow))].artwork;
     return (
         <div className={styles.musicInfo}>
-            {releases.map((release) => (
-                <a href={release.bandcamp ? release.bandcamp : release.spotify} target="_blank" rel="noopener noreferrer" className={styles.musicInfoitem}>
+            {releases.map((release, index) => (
+                <a href={release.bandcamp ? release.bandcamp : release.spotify} target="_blank" rel="noopener noreferrer" className={styles.musicInfoitem} key={index}>
                     <div>{release.name}</div>
                     <Image 
                         src={release.artwork}
