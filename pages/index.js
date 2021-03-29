@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>The Stetsons Electric</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap" rel="preload" rel="stylesheet" />
       </Head>
 
       <main className={styles.main}>
@@ -26,6 +26,7 @@ export default function Home() {
                 unoptimized={true}
                 objectFit="cover"
                 objectPosition="center center"
+                priority={true}
             />
         </div>
 

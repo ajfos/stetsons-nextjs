@@ -26,6 +26,7 @@ export default function MusicInfo ({ numberToShow = 0 }) {
                                 alt={`${release.name} artwork`}                    
                                 layout="fill"
                                 objectFit="contain"
+                                priority={true}
                             />
                         </div>
                     </div>
@@ -43,7 +44,7 @@ export default function MusicInfo ({ numberToShow = 0 }) {
                                 alt="more"                    
                                 layout="fill"
                                 objectFit="contain"
-                                
+                                priority={true}
                             />
                         </div>
                     </div>
