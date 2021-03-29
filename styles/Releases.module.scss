@@ -82,7 +82,17 @@
 
 .deezer {
     color:  #107fb8;
-    padding-top: 10px;
+    padding: 0;
+    margin: 7px 10px 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+
+    @media (max-width: 500px) {
+        height: 38px;
+        margin-top: 12px;
+    }
 }
 .deezer:hover {
     opacity: 0.5;
