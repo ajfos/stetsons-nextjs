@@ -1,0 +1,30 @@
+.button {
+    width: 100%;
+    min-width: 100px;
+    display: inline-block;
+    position: relative;
+    color: white;
+    border: 1px solid white;
+    padding: 0 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    perspective: 500px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 22px;
+    padding: 0 15px;
+    background-color: #22b2da;
+    font-family:'Lilita One';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.button:hover {
+    background-color: #00acdbce;
+}

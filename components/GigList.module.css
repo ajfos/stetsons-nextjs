@@ -1,0 +1,23 @@
+
+.gigList {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.gigListItem {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 32px;
+}
+
+.gigListItem > div {
+    padding: 0 10px;
+}
+
+.button {
+    
+}

@@ -1,5 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Button from '../components/Button';
+import GigList from '../components/GigList';
+import MusicInfo from '../components/MusicInfo';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faFacebook, faSpotify, faBandcamp, faSoundcloud, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import classnames from 'classnames';
 
 export default function Home() {
   return (
@@ -7,59 +13,73 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap" rel="stylesheet" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <img src="/stetsons-logo.png" alt="Stetsons Logo" className={styles.logo} />
+
+        <div className={styles.socialIcons}>
+            <a href="https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.spotify)}><FontAwesomeIcon icon={faSpotify} /></a>
+            <a href="https://www.facebook.com/thestetsonselectric/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.facebook)}><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="https://twitter.com/The_Stetsons" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.twitter)}><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://www.youtube.com/channel/UCn301PgyNOQEede0cEoyVaQ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.youtube)}><FontAwesomeIcon icon={faYoutube} /></a>
+            <a href="https://soundcloud.com/the-stetsons-electric" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.soundcloud)}><FontAwesomeIcon icon={faSoundcloud} /></a>
+            <a href="https://stetsons.bandcamp.com/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.bandcamp)}><FontAwesomeIcon icon={faBandcamp} /></a>
+        </div>
+
+
+        <p className={styles.tagLine}>
+            Three Rockin' Men Since God Knows When
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+        <GigList gigs={
+            [
+                {
+                    location: "our houses",
+                    date: "HH:mm DD/MM/YY",
+                    notes: "",
+                    link: "google.com",
+                    linkText: "More Info"
+                },
+                {
+                    location: "our houses",
+                    date: "HH:mm DD/MM/YY",
+                    notes: "",
+                    link: "google.com",
+                    linkText: "More Info"
+                },
+                {
+                    location: "our houses",
+                    date: "HH:mm DD/MM/YY",
+                    notes: "",
+                    link: "google.com",
+                    linkText: "More Info"
+                }
+            ]
+        } />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+        <MusicInfo musicList={
+            [
+                {
+                    name: "two tickets",
+                    artwork: "https://f4.bcbits.com/img/a1378663294_16.jpg",
+                    year: 2016,
+                    
+                }
+            ]
+        } />
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+  
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AEMNEekrEg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+      
+
+        
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
