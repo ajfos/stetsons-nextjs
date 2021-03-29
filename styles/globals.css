@@ -5,7 +5,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Lilita One', 'Righteous', cursive, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    background-color: #f2f4fa;
+    background: linear-gradient(#f2f4fa, #e9eefa);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 *,

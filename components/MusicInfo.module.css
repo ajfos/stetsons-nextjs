@@ -2,19 +2,34 @@
 .musicInfo {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: calc(100% - 40px);
     margin: 20px;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .musicInfoitem {
     display: inline-block;
     vertical-align: top;
-    margin: 20px 10px;
+    margin: 20px;
     color: black;
     text-decoration: none;
     transition: opacity 0.3s ease-in-out;
     position: relative;
+    font-size: 24px;
+}
+
+@media(max-width: 500px) {
+
+    .musicInfo {
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .musicInfoitem {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .musicInfoitem:hover {
@@ -25,20 +40,28 @@
     height: 200px;
     width: 200px;
     border-radius: 10px;
+    border: 1px solid black;
 }
 
 .musicInfoitem__year {
     font-size: 20px;
 }
 
-.musicInfoitem__get {
+.musicInfoitem__moreImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    opacity: 0.3;
+    position: relative;
+}
+
+.musicInfoitem__moreImageOverlay {
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
     position: absolute;
-    display: inline-block;
-    bottom: 20%;
-    right: 40px;
-    transform: rotate(-20deg);
-    border: 3px solid white;
-    padding: 5px 10px;
-    border-radius: 50px;
+    top: 110px;
+    left: 50px;
 }
 

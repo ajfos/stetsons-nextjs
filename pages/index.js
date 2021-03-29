@@ -1,6 +1,6 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Button from '../components/Button';
 import GigList from '../components/GigList';
 import MusicInfo from '../components/MusicInfo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,14 +11,23 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>The Stetsons Electric</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap" rel="stylesheet" />
       </Head>
 
       <main className={styles.main}>
 
-        <img src="/stetsons-logo.jpg" alt="Stetsons Logo" className={styles.logo} />
+        <div className={styles.logo}>
+            <Image
+                src="/stetsons-logo.jpg"
+                alt="Stetsons Logo"
+                layout="fill"
+                unoptimized={true}
+                objectFit="cover"
+                objectPosition="center center"
+            />
+        </div>
 
         <div className={styles.socialIcons}>
             <a href="https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.spotify)}><FontAwesomeIcon icon={faSpotify} /></a>
@@ -61,16 +70,7 @@ export default function Home() {
             ]
         } />
 
-        <MusicInfo musicList={
-            [
-                {
-                    name: "two tickets",
-                    artwork: "https://f4.bcbits.com/img/a1378663294_16.jpg",
-                    year: 2016,
-                    
-                }
-            ]
-        } />
+        <MusicInfo numberToShow={4}/>
 
   
 

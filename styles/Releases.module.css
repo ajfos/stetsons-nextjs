@@ -1,0 +1,96 @@
+.container {
+    margin: 20px;
+    min-height: 100vh;
+}
+
+.music {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homeIcon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.homeIcon:hover {
+    color: #22b2da;
+}
+
+.homeButton {
+    width: 150px;
+    margin: 20px auto;
+}
+
+.musicPlayer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.socialIcon {
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    width: 60px;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
+    height: 50px;
+}
+
+@media (max-width: 400px) {
+    .socialIcon {
+        font-size: 2rem;
+        padding: 0 5px 0 5px;
+    }
+}
+
+.socialIcon:hover {
+    color: rgba(34,	178, 218, 0.5);
+    transition: color 0.5s ease-in-out;
+}
+
+.spotify {
+    color: green;
+    padding-top: 10px;
+}
+
+.bandcamp {
+    color: #579aa8;
+    padding-top: 10px;
+}
+
+.soundcloud {
+    color: #ff5621;
+    padding-top: 10px;
+}
+
+.youtube {
+    color: #f02324;
+    padding-top: 10px;
+}
+
+.apple {
+    color: black;
+}
+
+.deezer {
+    color:  #107fb8;
+    padding-top: 10px;
+}
+.deezer:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    margin: 15px 0;
+}
