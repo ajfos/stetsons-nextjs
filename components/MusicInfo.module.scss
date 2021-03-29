@@ -1,0 +1,118 @@
+
+.musicInfo {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 40px);
+    margin: 20px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.musicInfoitem {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+    font-size: 24px;
+}
+
+.musicInfoitem__imageContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.musicInfoitem__image {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.musicInfoitem__moreImage {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+@media(max-width: 500px) {
+
+    .musicInfo {
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .musicInfoitem {
+        width: 40%;
+        text-align: center;
+        margin: 10px;
+    }
+    .musicInfoitem__image {
+        width: 150px;
+        height: 150px;
+    }
+    .musicInfoitem__moreImage {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.musicInfoitem:hover {
+    opacity: 70%;
+}
+
+
+
+.musicInfoitem__year {
+    font-size: 20px;
+}
+
+.moreIcon {
+    color: black;
+    height: 40px;
+    width: 40px;
+    padding: 5px 0 0 10px;
+}
+
+.musicInfoitem__moreImageOverlay {
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 110px 0 0 0;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+        color: #22b2da;
+        -webkit-text-stroke-color: white;
+        .moreIcon {
+            color: #22b2da;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .musicInfoitem__moreImageOverlay {
+        font-size: 28px;
+    }
+    .moreIcon {
+        height: 35px;
+        width: 35px;
+    }
+}
+

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import GigList from '../components/GigList';
 import MusicInfo from '../components/MusicInfo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -30,12 +30,24 @@ export default function Home() {
         </div>
 
         <div className={styles.socialIcons}>
-            <a href="https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.spotify)}><FontAwesomeIcon icon={faSpotify} /></a>
-            <a href="https://www.facebook.com/thestetsonselectric/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.facebook)}><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com/The_Stetsons" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.twitter)}><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="https://www.youtube.com/channel/UCn301PgyNOQEede0cEoyVaQ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.youtube)}><FontAwesomeIcon icon={faYoutube} /></a>
-            <a href="https://soundcloud.com/the-stetsons-electric" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.soundcloud)}><FontAwesomeIcon icon={faSoundcloud} /></a>
-            <a href="https://stetsons.bandcamp.com/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.bandcamp)}><FontAwesomeIcon icon={faBandcamp} /></a>
+            <a href="https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.spotify)}>
+                <FontAwesomeIcon icon={faSpotify} />
+            </a>
+            <a href="https://www.facebook.com/thestetsonselectric/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.facebook)}>
+                <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="https://twitter.com/The_Stetsons" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.twitter)}>
+                <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="https://www.youtube.com/channel/UCn301PgyNOQEede0cEoyVaQ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.youtube)}>
+                <FontAwesomeIcon icon={faYoutube} />
+            </a>
+            <a href="https://soundcloud.com/the-stetsons-electric" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.soundcloud)}>
+                <FontAwesomeIcon icon={faSoundcloud} />
+            </a>
+            <a href="https://stetsons.bandcamp.com/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.bandcamp)}>
+                <FontAwesomeIcon icon={faBandcamp} />
+            </a>
         </div>
 
 
@@ -47,22 +59,22 @@ export default function Home() {
         <GigList gigs={
             [
                 {
-                    location: "our houses",
-                    date: "HH:mm DD/MM/YY",
+                    location: "Our Houses",
+                    date: "30/03/2021",
                     notes: "",
                     link: "/",
                     linkText: "More Info"
                 },
                 {
-                    location: "our houses",
-                    date: "HH:mm DD/MM/YY",
+                    location: "The Tudor",
+                    date: "12/05/2021",
                     notes: "",
                     link: "/",
                     linkText: "More Info"
                 },
                 {
-                    location: "our houses",
-                    date: "HH:mm DD/MM/YY",
+                    location: "No LockDown Party",
+                    date: "21/06/2021",
                     notes: "",
                     link: "/",
                     linkText: "More Info"
@@ -74,7 +86,7 @@ export default function Home() {
 
   
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/AEMNEekrEg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/AEMNEekrEg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
 
       
 

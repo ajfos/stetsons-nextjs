@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './MusicInfo.module.css';
+import styles from './MusicInfo.module.scss';
 import * as releaseData from './ReleaseData';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -19,13 +19,16 @@ export default function MusicInfo ({ numberToShow = 0 }) {
             {releases.map((release, index) => (
                 <a href={release.bandcamp ? release.bandcamp : release.spotify} target="_blank" rel="noopener noreferrer" className={styles.musicInfoitem} key={index}>
                     <div>{release.name}</div>
-                    <Image 
-                        src={release.artwork}
-                        alt={`${release.name} artwork`}                    
-                        height="200"
-                        width="200"
-                        className={styles.musicInfoitem__image}
-                    />
+                    <div className={styles.musicInfoitem__imageContainer}>
+                        <div className={styles.musicInfoitem__image}>
+                            <Image 
+                                src={release.artwork}
+                                alt={`${release.name} artwork`}                    
+                                layout="fill"
+                                objectFit="contain"
+                            />
+                        </div>
+                    </div>
                     <div className={styles.musicInfoitem__year}>{release.year}</div>
                     {release.notes && (<div>{release.notes}</div>)}
                 </a>
@@ -33,18 +36,21 @@ export default function MusicInfo ({ numberToShow = 0 }) {
             {numberToShow > 0 && <Link href="/releases">
                 <a className={styles.musicInfoitem}>
                     <div>Others</div>
-                    <Image 
-                        src={moreImage}
-                        alt="more"                    
-                        height="200"
-                        width="200"
-                        className={styles.musicInfoitem__moreImage}
-                    />
+                    <div className={styles.musicInfoitem__imageContainer}>
+                        <div className={styles.musicInfoitem__moreImage}>
+                            <Image 
+                                src={moreImage}
+                                alt="more"                    
+                                layout="fill"
+                                objectFit="contain"
+                                
+                            />
+                        </div>
+                    </div>
                     <div className={styles.musicInfoitem__year}>Various</div>
                     <div className={styles.musicInfoitem__moreImageOverlay}>
                         More
                         <div className={styles.moreIcon}><FontAwesomeIcon icon={faArrowCircleRight} /></div>
-                        
                     </div>
                 </a>
             </Link>}
