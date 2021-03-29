@@ -30,6 +30,10 @@ export default function Home() {
             />
         </div>
 
+        <div className={styles.tagLine}>
+            Three Rockin' Men Since God Knows When
+        </div>
+
         <div className={styles.socialIcons}>
             <a href="https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.spotify)}>
                 <FontAwesomeIcon icon={faSpotify} />
@@ -52,9 +56,7 @@ export default function Home() {
         </div>
 
 
-        <p className={styles.tagLine}>
-            Three Rockin' Men Since God Knows When
-        </p>
+        
 
 
         <GigList gigs={
@@ -93,7 +95,7 @@ export default function Home() {
 
     <div className={styles.contact} id="contact">
         <div>Email: <a href="mailto:thestetsonselectric@gmail.com" className={styles.emailLink}>thestetsonselectric@gmail.com</a> or</div>
-        <div className={classnames(styles.socialIcons, styles.footerFacebook)}>
+        <div className={styles.footerFacebook}>
             message us on: 
             <a href="https://www.facebook.com/thestetsonselectric/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.facebook, styles.footerFacebookIcon)}>
                 <FontAwesomeIcon icon={faFacebook} />
