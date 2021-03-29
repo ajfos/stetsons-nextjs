@@ -89,4 +89,41 @@
     color: #f02324;
 }
 
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px 0 30px 0;
+    font-size: 24px;
+    text-align: center;
+
+    @media(max-width: 600px) {
+        font-size: 20px;
+        margin: 0 20px;
+    }
+}
+
+.emailLink {
+    padding: 0 10px;
+    color: #22b2da;
+    text-decoration: underline;
+}
+
+.footerFacebook {
+    padding: 0 10px;
+    @media(max-width: 600px) {
+        padding: 5px;
+    }
+}
+
+.footerFacebookIcon {
+    height: 50px;
+    width: 50px;
+    @media(max-width: 600px) {
+        height: 40px;
+        width: 40px;
+        margin: -2px 0 0 0;
+    }
+}
+
 

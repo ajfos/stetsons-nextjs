@@ -89,10 +89,17 @@ export default function Home() {
 
       {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/AEMNEekrEg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
 
-      
+    </main>
 
-        
-      </main>
+    <div className={styles.contact} id="contact">
+        <div>Email: <a href="mailto:thestetsonselectric@gmail.com" className={styles.emailLink}>thestetsonselectric@gmail.com</a> or</div>
+        <div className={classnames(styles.socialIcons, styles.footerFacebook)}>
+            message us on: 
+            <a href="https://www.facebook.com/thestetsonselectric/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.facebook, styles.footerFacebookIcon)}>
+                <FontAwesomeIcon icon={faFacebook} />
+            </a>
+        </div>
+    </div>
     </div>
   )
 }
