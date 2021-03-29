@@ -4,7 +4,7 @@ import styles from '../styles/Releases.module.css'
 import MusicInfo from '../components/MusicInfo';
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faSpotify, faBandcamp, faSoundcloud, faYoutube, faApple, faDeezer } from '@fortawesome/free-brands-svg-icons'
+import { faSpotify, faBandcamp, faSoundcloud, faYoutube, faApple, faDeezer } from '@fortawesome/free-brands-svg-icons'
 import Button from '../components/Button'
 import classnames from 'classnames';
 

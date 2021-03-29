@@ -2,7 +2,9 @@ import React from 'react';
 import styles from './MusicInfo.module.css';
 import * as releaseData from './ReleaseData';
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function MusicInfo ({ numberToShow }) {
     let arrayCopy = [...releaseData.releases];
@@ -39,7 +41,11 @@ export default function MusicInfo ({ numberToShow }) {
                         className={styles.musicInfoitem__moreImage}
                     />
                     <div className={styles.musicInfoitem__year}>Various</div>
-                    <div className={styles.musicInfoitem__moreImageOverlay}>More</div>
+                    <div className={styles.musicInfoitem__moreImageOverlay}>
+                        More
+                        <div className={styles.moreIcon}><FontAwesomeIcon icon={faArrowCircleRight} /></div>
+                        
+                    </div>
                 </a>
             </Link>}
         </div>

@@ -50,21 +50,21 @@ export default function Home() {
                     location: "our houses",
                     date: "HH:mm DD/MM/YY",
                     notes: "",
-                    link: "google.com",
+                    link: "/",
                     linkText: "More Info"
                 },
                 {
                     location: "our houses",
                     date: "HH:mm DD/MM/YY",
                     notes: "",
-                    link: "google.com",
+                    link: "/",
                     linkText: "More Info"
                 },
                 {
                     location: "our houses",
                     date: "HH:mm DD/MM/YY",
                     notes: "",
-                    link: "google.com",
+                    link: "/",
                     linkText: "More Info"
                 }
             ]
