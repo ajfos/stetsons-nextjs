@@ -18,7 +18,7 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <img src="/stetsons-logo.png" alt="Stetsons Logo" className={styles.logo} />
+        <img src="/stetsons-logo.jpg" alt="Stetsons Logo" className={styles.logo} />
 
         <div className={styles.socialIcons}>
             <a href="https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.spotify)}><FontAwesomeIcon icon={faSpotify} /></a>
