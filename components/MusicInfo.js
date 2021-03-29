@@ -18,7 +18,7 @@ export default function MusicInfo ({ numberToShow = 0 }) {
         <div className={styles.musicInfo}>
             {releases.map((release, index) => (
                 <a href={release.bandcamp ? release.bandcamp : release.spotify} target="_blank" rel="noopener noreferrer" className={styles.musicInfoitem} key={index}>
-                    <div>{release.name}</div>
+                    <div className={styles.name}>{release.name}</div>
                     <div className={styles.musicInfoitem__imageContainer}>
                         <div className={styles.musicInfoitem__image}>
                             <Image 
@@ -35,7 +35,7 @@ export default function MusicInfo ({ numberToShow = 0 }) {
             ))}
             {numberToShow > 0 && <Link href="/releases">
                 <a className={styles.musicInfoitem}>
-                    <div>Others</div>
+                    <div className={styles.name}>Others</div>
                     <div className={styles.musicInfoitem__imageContainer}>
                         <div className={styles.musicInfoitem__moreImage}>
                             <Image 

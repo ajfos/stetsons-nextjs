@@ -2,7 +2,7 @@
 .musicInfo {
     display: flex;
     justify-content: space-around;
-    width: calc(100% - 40px);
+    width: 100%;
     margin: 20px;
     flex-wrap: wrap;
     z-index: 1;
@@ -57,13 +57,19 @@
         margin: 10px;
     }
     .musicInfoitem__image {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
     .musicInfoitem__moreImage {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
+}
+
+.name {
+    height: 54px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .musicInfoitem:hover {
