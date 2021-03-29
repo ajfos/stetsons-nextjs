@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Releases.module.css'
 import MusicInfo from '../components/MusicInfo';
 import { faHome } from '@fortawesome/free-solid-svg-icons'
@@ -20,7 +21,9 @@ export default function Releases() {
                 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap" rel="stylesheet" />
             </Head>
             <div className={styles.homeIcon}>
-                <FontAwesomeIcon icon={faHome} />
+                <Link href="/">
+                    <FontAwesomeIcon icon={faHome} />
+                </Link>
             </div>
 
             <div className={styles.header}>

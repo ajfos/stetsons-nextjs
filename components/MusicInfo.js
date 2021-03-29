@@ -6,14 +6,14 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
-export default function MusicInfo ({ numberToShow }) {
+export default function MusicInfo ({ numberToShow = 0 }) {
     let arrayCopy = [...releaseData.releases];
     let releases = arrayCopy.reverse();
-    if(numberToShow) {
-        releases = releases.slice(0, 4);
+    if(numberToShow && numberToShow !== 0) {
+        releases = releases.slice(0, numberToShow);
     }
     
-    const moreImage = releaseData.releases[Math.floor(Math.random() * Math.floor(releaseData.releases.length - 4))].artwork;
+    const moreImage = releaseData.releases[Math.floor(Math.random() * Math.floor(releaseData.releases.length - numberToShow))].artwork;
     return (
         <div className={styles.musicInfo}>
             {releases.map((release) => (
@@ -30,7 +30,7 @@ export default function MusicInfo ({ numberToShow }) {
                     {release.notes && (<div>{release.notes}</div>)}
                 </a>
             ))}
-            {numberToShow && <Link href="/releases">
+            {numberToShow > 0 && <Link href="/releases">
                 <a className={styles.musicInfoitem}>
                     <div>Others</div>
                     <Image 

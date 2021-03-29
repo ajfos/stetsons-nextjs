@@ -70,7 +70,7 @@ export default function Home() {
             ]
         } />
 
-        <MusicInfo numberToShow={4}/>
+        <MusicInfo numberToShow={3}/>
 
   
 

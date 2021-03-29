@@ -5,8 +5,8 @@ import Button from './Button';
 export default function GigList ({ gigs }) {
     return (
         <div className={styles.gigList}>
-            {gigs.map((gig) => (
-                <div className={styles.gigListItem}>
+            {gigs.map((gig, index) => (
+                <div className={styles.gigListItem} key={index}>
                     <div>{gig.location}</div>
                     <div>{gig.date}</div>
                     <div>{gig.notes}</div>
