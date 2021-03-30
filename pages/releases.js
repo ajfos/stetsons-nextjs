@@ -5,11 +5,11 @@ import styles from '../styles/Releases.module.scss'
 import MusicInfo from '../components/MusicInfo';
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpotify, faBandcamp, faSoundcloud, faYoutube, faApple, faDeezer } from '@fortawesome/free-brands-svg-icons'
+import { faSpotify, faBandcamp, faSoundcloud, faYoutube, faApple } from '@fortawesome/free-brands-svg-icons'
 import Button from '../components/Button'
 import classnames from 'classnames';
 
-export default function Releases({ releaseData }) {
+export default function Releases() {
 
 
 
@@ -56,7 +56,7 @@ export default function Releases({ releaseData }) {
             </div>
 
             <div className={styles.music}>
-                <MusicInfo releaseData={releaseData} />
+                <MusicInfo />
             </div>
 
            
@@ -68,19 +68,3 @@ export default function Releases({ releaseData }) {
         
     );
 }
-
-export async function getStaticProps(context) {
-    const res = await fetch(`https://optimistic-kare-adaaf7.netlify.app/api/release-list`)
-    const data = await res.json()
-  
-    if (!data) {
-        return {
-            notFound: true,
-        }
-    }
-  
-    return {
-        props: { releaseData: data.releases }, // will be passed to the page component as props
-    }
-}
-  

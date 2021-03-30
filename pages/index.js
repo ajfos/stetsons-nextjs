@@ -4,10 +4,10 @@ import styles from '../styles/Home.module.scss'
 import GigList from '../components/GigList';
 import MusicInfo from '../components/MusicInfo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faFacebook, faSpotify, faBandcamp, faSoundcloud, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faFacebook, faSpotify, faBandcamp, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import classnames from 'classnames';
 
-export default function Home({ releaseData }) {
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -85,7 +85,7 @@ export default function Home({ releaseData }) {
             ]
         } />
 
-        <MusicInfo numberToShow={3} showTitle releaseData={releaseData}/>
+        <MusicInfo numberToShow={3} showTitle />
 
   
 
@@ -106,19 +106,4 @@ export default function Home({ releaseData }) {
     <div className={styles.createdBy}>Created by <a href="mailto:arniej182@hotmail.co.uk" className={styles.createdByEmail}>The Prospector</a><br />Keeps the mind keen and the gold clean.</div>
     </div>
   )
-}
-
-export async function getStaticProps(context) {
-    const res = await fetch(`https://optimistic-kare-adaaf7.netlify.app/api/release-list`)
-    const data = await res.json()
-  
-    if (!data) {
-        return {
-            notFound: true,
-        }
-    }
-  
-    return {
-        props: { releaseData: data.releases }, // will be passed to the page component as props
-    }
 }
