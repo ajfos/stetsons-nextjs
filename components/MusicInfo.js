@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './MusicInfo.module.scss';
-import * as releaseData from './ReleaseData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
+
 export default function MusicInfo ({ numberToShow = 0 }) {
-    let arrayCopy = [...releaseData.releases];
+
+    const [ apiData, setApiData ] = useState({ releases: [] });
+
+    useEffect(() => {
+        fetch('/api/release-list')
+            .then((res) => res.json())
+            .then(setApiData);
+    },[]);
+
+    if(apiData.releases.length < 1) return <div>Loading...</div>
+
+    let arrayCopy = [...apiData.releases];
     let releases = arrayCopy.reverse();
     if(numberToShow && numberToShow !== 0) {
         releases = releases.slice(0, numberToShow);
     }
     
-    const moreImage = releaseData.releases[Math.floor(Math.random() * Math.floor(releaseData.releases.length - numberToShow))].artwork;
+    const moreImage = apiData.releases[Math.floor(Math.random() * Math.floor(apiData.releases.length - numberToShow))].artwork;
     return (
         <div className={styles.musicInfo}>
             {releases.map((release, index) => (
