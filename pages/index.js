@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss'
 import GigList from '../components/GigList';
 import MusicInfo from '../components/MusicInfo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faFacebook, faSpotify, faBandcamp, faSoundcloud, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faFacebook, faSpotify, faBandcamp, faSoundcloud, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import classnames from 'classnames';
 
 export default function Home() {
@@ -47,8 +47,8 @@ export default function Home() {
             <a href="https://www.youtube.com/channel/UCn301PgyNOQEede0cEoyVaQ" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.youtube)}>
                 <FontAwesomeIcon icon={faYoutube} />
             </a>
-            <a href="https://soundcloud.com/the-stetsons-electric" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.soundcloud)}>
-                <FontAwesomeIcon icon={faSoundcloud} />
+            <a href="https://www.instagram.com/thestetsonselectric/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.instagram)}>
+                <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a href="https://stetsons.bandcamp.com/" target="_blank" rel="noopener noreferrer" className={classnames(styles.socialIcon, styles.bandcamp)}>
                 <FontAwesomeIcon icon={faBandcamp} />
