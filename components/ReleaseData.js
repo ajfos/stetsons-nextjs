@@ -9,7 +9,7 @@
         spotify: 'https://open.spotify.com/album/1d0rMgWlr6HsrHU9aUVLky',
         soundcloud: 'https://soundcloud.com/the-stetsons-electric/sets/das-giddy',
         bandcamp: 'https://stetsons.bandcamp.com/album/das-giddy',
-        description: "We got giddy recording this. After winning a battle of the bands, we won £500, spent it all on recording and even had time left to make the intro track."
+        description: 'We got giddy recording this. After winning a battle of the bands, we won £500, spent it all on recording and even had time left to make the intro track.'
     },
     {
         name: 'The Shotman',

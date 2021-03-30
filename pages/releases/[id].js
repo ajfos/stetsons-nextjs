@@ -43,6 +43,12 @@ const Release = () => {
         )
     }
 
+    let description = release.description;
+    let isDasGiddy = release.name === 'Das Giddy';
+    if(isDasGiddy) {
+        description = description.replace('intro track.', '');
+    }
+
     return (
         <div className={styles.container}>
 
@@ -64,7 +70,11 @@ const Release = () => {
                 <div className={styles.details}>
                     <div className={styles.name}>{release.name}</div>
                     <div className={styles.year}>{release.year}</div>
-                    {release.description && (<div className={styles.description}>{release.description}</div>)}
+                    {release.description && (
+                        <div className={styles.description}>
+                            {description}{isDasGiddy && (<a href="https://www.youtube.com/watch?v=4iFjB4qpZlE" target="_blank" rel="noopener noreferrer" className="colouredLink">intro track.</a>)}
+                        </div>
+                    )}
                     <div className={styles.releaseIcons}>
                         <a href="https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ" target="_blank" rel="noopener noreferrer" className={classnames(styles.releaseIcon, styles.spotify)}>
                             <FontAwesomeIcon icon={faSpotify} />
