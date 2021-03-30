@@ -8,6 +8,16 @@
     z-index: 1;
 }
 
+.header {
+    font-size: 24px;
+    text-decoration: underline;
+    margin: 40px 0 -40px 0;
+
+    @media(max-width: 600px) {
+        margin: 20px 0 -20px 0;
+    }
+}
+
 .musicInfoitem {
     display: inline-block;
     vertical-align: top;

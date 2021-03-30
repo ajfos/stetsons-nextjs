@@ -85,7 +85,7 @@ export default function Home() {
             ]
         } />
 
-        <MusicInfo numberToShow={3}/>
+        <MusicInfo numberToShow={3} showTitle/>
 
   
 
@@ -102,6 +102,8 @@ export default function Home() {
             </a>
         </div>
     </div>
+
+    <div className={styles.createdBy}>Created by <a href="mailto:arniej182@hotmail.co.uk" className={styles.createdByEmail}>The Prospector</a><br />Keeps the mind keen and the gold clean.</div>
     </div>
   )
 }

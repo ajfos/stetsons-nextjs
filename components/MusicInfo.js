@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 
-export default function MusicInfo ({ numberToShow = 0 }) {
+export default function MusicInfo ({ numberToShow = 0, showTitle }) {
 
     const [ apiData, setApiData ] = useState({ releases: [] });
 
@@ -26,46 +26,49 @@ export default function MusicInfo ({ numberToShow = 0 }) {
     
     const moreImage = apiData.releases[Math.floor(Math.random() * Math.floor(apiData.releases.length - numberToShow))].artwork;
     return (
-        <div className={styles.musicInfo}>
-            {releases.map((release, index) => (
-                <a href={release.bandcamp ? release.bandcamp : release.spotify} target="_blank" rel="noopener noreferrer" className={styles.musicInfoitem} key={index}>
-                    <div className={styles.name}>{release.name}</div>
-                    <div className={styles.musicInfoitem__imageContainer}>
-                        <div className={styles.musicInfoitem__image}>
-                            <Image 
-                                src={release.artwork}
-                                alt={`${release.name} artwork`}                    
-                                layout="fill"
-                                objectFit="contain"
-                                priority={true}
-                            />
+        <>
+            <div className={styles.header}>Music</div>
+            <div className={styles.musicInfo}>
+                {releases.map((release, index) => (
+                    <a href={release.bandcamp ? release.bandcamp : release.spotify} target="_blank" rel="noopener noreferrer" className={styles.musicInfoitem} key={index}>
+                        <div className={styles.name}>{release.name}</div>
+                        <div className={styles.musicInfoitem__imageContainer}>
+                            <div className={styles.musicInfoitem__image}>
+                                <Image 
+                                    src={release.artwork}
+                                    alt={`${release.name} artwork`}                    
+                                    layout="fill"
+                                    objectFit="contain"
+                                    priority={true}
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.musicInfoitem__year}>{release.year}</div>
-                    {release.notes && (<div>{release.notes}</div>)}
-                </a>
-            ))}
-            {numberToShow > 0 && <Link href="/releases">
-                <a className={styles.musicInfoitem}>
-                    <div className={styles.name}>Others</div>
-                    <div className={styles.musicInfoitem__imageContainer}>
-                        <div className={styles.musicInfoitem__moreImage}>
-                            <Image 
-                                src={moreImage}
-                                alt="more"                    
-                                layout="fill"
-                                objectFit="contain"
-                                priority={true}
-                            />
+                        <div className={styles.musicInfoitem__year}>{release.year}</div>
+                        {release.notes && (<div>{release.notes}</div>)}
+                    </a>
+                ))}
+                {numberToShow > 0 && <Link href="/releases">
+                    <a className={styles.musicInfoitem}>
+                        <div className={styles.name}>Others</div>
+                        <div className={styles.musicInfoitem__imageContainer}>
+                            <div className={styles.musicInfoitem__moreImage}>
+                                <Image 
+                                    src={moreImage}
+                                    alt="more"                    
+                                    layout="fill"
+                                    objectFit="contain"
+                                    priority={true}
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.musicInfoitem__year}>Various</div>
-                    <div className={styles.musicInfoitem__moreImageOverlay}>
-                        More
-                        <div className={styles.moreIcon}><FontAwesomeIcon icon={faArrowCircleRight} /></div>
-                    </div>
-                </a>
-            </Link>}
-        </div>
+                        <div className={styles.musicInfoitem__year}>Various</div>
+                        <div className={styles.musicInfoitem__moreImageOverlay}>
+                            More
+                            <div className={styles.moreIcon}><FontAwesomeIcon icon={faArrowCircleRight} /></div>
+                        </div>
+                    </a>
+                </Link>}
+            </div>
+        </>
     )
 }
