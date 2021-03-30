@@ -28,6 +28,7 @@ export default function MusicInfo ({ numberToShow = 0 }) {
                                     layout="fill"
                                     objectFit="contain"
                                     priority={true}
+                                    loading="eager"
                                 />
                             </div>
                         </div>
