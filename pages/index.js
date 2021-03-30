@@ -14,6 +14,7 @@ export default function Home() {
         <title>The Stetsons Electric</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap" rel="preload" rel="stylesheet" />
+        <meta name="facebook-domain-verification" content="cyzbv14ni5d3j58emjcixxnc9m3b7e" />
       </Head>
 
       <main className={styles.main}>
