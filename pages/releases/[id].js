@@ -30,7 +30,10 @@ const Release = () => {
                         <FontAwesomeIcon icon={faHome} />
                     </Link>
                 </div>
-                <div className={styles.releaseNotWritten}>Opps, we haven't written this one yet.</div>
+                <div className={styles.releaseNotWritten}>Opps, we haven't written this one yet. Here's something else we made instead:</div>
+                <div className={styles.youtubeVideo}>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/AEMNEekrEg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
                 <div className={styles.releaseHomeButtonContainer}>
                     <div className={styles.releaseHomeButton}>
                         <Button link="/releases/1">Start Again</Button>
