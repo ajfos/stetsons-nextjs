@@ -59,31 +59,15 @@ export default function Home() {
         
 
 
-        <GigList gigs={
-            [
-                {
-                    location: "Our Houses",
-                    date: "30/03/2021",
-                    notes: "",
-                    link: "/",
-                    linkText: "More Info"
-                },
-                {
-                    location: "The Tudor",
-                    date: "12/05/2021",
-                    notes: "",
-                    link: "/",
-                    linkText: "More Info"
-                },
-                {
-                    location: "No LockDown Party",
-                    date: "21/06/2021",
-                    notes: "",
-                    link: "/",
-                    linkText: "More Info"
-                }
-            ]
-        } />
+        <GigList />
+
+        <div className={styles.latestUpdate}>
+            <div className={styles.latestUpdateText}>Until then, here's our latest video!</div>
+            <div className={styles.youtubeVideoHome}>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/AEMNEekrEg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+            <div className={styles.latestUpdateText}>More on <a className={styles.createdByEmail} href="https://www.youtube.com/channel/UCn301PgyNOQEede0cEoyVaQ" target="_blank" rel="noopener noreferrer">YouTube</a></div>
+        </div>
 
         <MusicInfo numberToShow={3} showTitle />
 
