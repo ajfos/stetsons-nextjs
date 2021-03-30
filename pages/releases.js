@@ -9,7 +9,7 @@ import { faSpotify, faBandcamp, faSoundcloud, faYoutube, faApple, faDeezer } fro
 import Button from '../components/Button'
 import classnames from 'classnames';
 
-export default function Releases() {
+export default function Releases({ releaseData }) {
 
 
 
@@ -53,12 +53,10 @@ export default function Releases() {
 
             <div className={styles.header}>
                 or select a release below for more information. 
-                <br />
-                (some are on selected stores only)
             </div>
 
             <div className={styles.music}>
-                <MusicInfo />
+                <MusicInfo releaseData={releaseData} />
             </div>
 
            
@@ -70,3 +68,19 @@ export default function Releases() {
         
     );
 }
+
+export async function getStaticProps(context) {
+    const res = await fetch(`https://optimistic-kare-adaaf7.netlify.app/api/release-list`)
+    const data = await res.json()
+  
+    if (!data) {
+        return {
+            notFound: true,
+        }
+    }
+  
+    return {
+        props: { releaseData: data.releases }, // will be passed to the page component as props
+    }
+}
+  

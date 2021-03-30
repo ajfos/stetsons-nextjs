@@ -6,28 +6,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 
-export default function MusicInfo ({ numberToShow = 0, showTitle }) {
+export default function MusicInfo ({ releaseData, numberToShow = 0, showTitle }) {
 
-    const [ apiData, setApiData ] = useState({ releases: [] });
+    // const [ apiData, setApiData ] = useState({ releases: [] });
 
-    useEffect(() => {
-        fetch('/api/release-list')
-            .then((res) => res.json())
-            .then(setApiData);
-    },[]);
+    // useEffect(() => {
+    //     fetch('/api/release-list')
+    //         .then((res) => res.json())
+    //         .then(setApiData);
+    // },[]);
+    console.log('releaseData', releaseData)
 
-    if(apiData.releases.length < 1) return <div>Loading...</div>
+    if(!releaseData || releaseData.length < 1) return <div>Loading...</div>
 
-    let arrayCopy = [...apiData.releases];
+    let arrayCopy = [...releaseData];
     let releases = arrayCopy.reverse();
     if(numberToShow && numberToShow !== 0) {
         releases = releases.slice(0, numberToShow);
     }
     
-    const moreImage = apiData.releases[Math.floor(Math.random() * Math.floor(apiData.releases.length - numberToShow))].artwork;
+    const moreImage = releaseData[Math.floor(Math.random() * Math.floor(releaseData.length - numberToShow))].artwork;
     return (
         <>
-            <div className={styles.header}>Music</div>
+            {showTitle && (<div className={styles.header}>Music</div>)}
             <div className={styles.musicInfo}>
                 {releases.map((release, index) => (
                     <a href={release.bandcamp ? release.bandcamp : release.spotify} target="_blank" rel="noopener noreferrer" className={styles.musicInfoitem} key={index}>

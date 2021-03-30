@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faFacebook, faSpotify, faBandcamp, faSoundcloud, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import classnames from 'classnames';
 
-export default function Home() {
+export default function Home({ releaseData }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -85,7 +85,7 @@ export default function Home() {
             ]
         } />
 
-        <MusicInfo numberToShow={3} showTitle/>
+        <MusicInfo numberToShow={3} showTitle releaseData={releaseData}/>
 
   
 
@@ -106,4 +106,19 @@ export default function Home() {
     <div className={styles.createdBy}>Created by <a href="mailto:arniej182@hotmail.co.uk" className={styles.createdByEmail}>The Prospector</a><br />Keeps the mind keen and the gold clean.</div>
     </div>
   )
+}
+
+export async function getStaticProps(context) {
+    const res = await fetch(`https://optimistic-kare-adaaf7.netlify.app/api/release-list`)
+    const data = await res.json()
+  
+    if (!data) {
+        return {
+            notFound: true,
+        }
+    }
+  
+    return {
+        props: { releaseData: data.releases }, // will be passed to the page component as props
+    }
 }
