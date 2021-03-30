@@ -18,9 +18,31 @@ const Release = () => {
 
 
     if(!release) {
-        return <div>Loading...</div>
+        return (
+            <div className={styles.container}>
+                <Head>
+                    <title>The Stetsons Electric</title>
+                    <link rel="icon" href="/favicon.ico" />
+                    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap" rel="preload" rel="stylesheet" />
+                </Head>
+                <div className={styles.releaseHomeIcon}>
+                    <Link href="/">
+                        <FontAwesomeIcon icon={faHome} />
+                    </Link>
+                </div>
+                <div className={styles.releaseNotWritten}>Opps, we haven't written this one yet.</div>
+                <div className={styles.releaseHomeButtonContainer}>
+                    <div className={styles.releaseHomeButton}>
+                        <Button link="/releases/1">Start Again</Button>
+                    </div>
+                    <div className={styles.releaseHomeButton}>
+                        <Button link="/releases">Back</Button>
+                    </div>
+                </div>
+            </div>
+        )
     }
-    
+
     return (
         <div className={styles.container}>
 
@@ -66,8 +88,10 @@ const Release = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.releaseHomeButton}>
-                <Button link="/releases">Back</Button>
+            <div className={styles.releaseHomeButtonContainer}>
+                {(id - 1) > 0 && (<div className={styles.releaseHomeButton}><Button link={`/releases/${parseInt(id, 10) - 1}`}>Previous</Button></div>)}
+                <div className={styles.releaseHomeButton}><Button link="/releases">Back</Button></div>
+                <div className={styles.releaseHomeButton}><Button link={`/releases/${parseInt(id, 10) + 1}`}>Next</Button></div>
             </div>
         </div>
     )
