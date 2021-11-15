@@ -18,6 +18,7 @@ export default function GigList ({ gigs }) {
             {gigs.map((gig, index) => (
                <GigItem gig={gig} key={index}/>
             ))}
+            <div className={styles.contactRequestWithGig}><a href="#contact" className={styles.contact}>Contact us</a> if you want us to perform!</div>
         </div>
     )
 }

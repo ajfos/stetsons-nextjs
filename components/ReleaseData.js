@@ -82,5 +82,14 @@
         bandcamp: null,
         description: "A lovely ballad for once, and another love song."
     },
-
+    {
+        name: `Nana's Boy`,
+        year: 2021,
+        artwork: "/nanas_boy.jpg",
+        id: 9,
+        spotify: 'https://open.spotify.com/track/5FxnTRzsWi0q5Z0Z6TTIxJ?si=eac844ceae1547c8',
+        soundcloud: 'https://soundcloud.com/the-stetsons-electric/nanas-boy',
+        bandcamp: null,
+        description: "Ever gone to your nan's for tea to avoid your girlfriend? Thought so. (Artwork by IG: ida.ideas)"
+    },
 ];

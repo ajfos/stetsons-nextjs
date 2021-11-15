@@ -77,5 +77,13 @@ const releases = [
         soundcloud: null,
         bandcamp: null
     },
-
+    {
+        name: `Nana's Boy`,
+        year: 2021,
+        artwork: "/nanas_boy.jpg",
+        id: 9,
+        spotify: 'https://open.spotify.com/track/5FxnTRzsWi0q5Z0Z6TTIxJ?si=eac844ceae1547c8',
+        soundcloud: 'https://soundcloud.com/the-stetsons-electric/nanas-boy',
+        bandcamp: null
+    },
 ];

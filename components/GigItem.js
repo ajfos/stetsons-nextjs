@@ -13,7 +13,7 @@ export default function GigList ({ gig }) {
             <div className={styles.location}>{gig.location}</div>
             <div className={styles.date}>{gig.date}</div>
             {gig.link && (<a className={styles.arrow} href={gig.link}><FontAwesomeIcon icon={faArrowCircleRight}/></a>)}
-            {gig.link && shouldShowButton && (<div className={styles.button}><Button link={gig.link}>{gig.linkText}</Button></div>)}
+            {gig.link && shouldShowButton && (<div className={styles.button}><Button newTab link={gig.link}>{gig.linkText}</Button></div>)}
         </div>
     )
 }

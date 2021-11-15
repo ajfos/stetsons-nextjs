@@ -56,11 +56,8 @@ export default function Home() {
             </a>
         </div>
 
-
-        
-
-
-        <GigList />
+        {/* todo use songkick api, there is a key in inbox */}
+        <GigList gigs={[{location: "The Old Courts, Wigan", date: "03/12/2021", link: "https://www.theoldcourts.com/shows/flash-a-tribute-to-queen/", linkText: "Event Info/Tickets"}]} />
 
         <div className={styles.latestUpdate}>
             <div className={styles.latestUpdateText}>Until then, here's our latest video!</div>

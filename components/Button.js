@@ -12,8 +12,7 @@ export default function Button ({ onClick, children, type="button", link, newTab
                     (<a target="_blank" rel="noopener noreferrer" className={classnames(styles.button, styles.buttonLink)}>{children}</a>)
                     : 
                     (<a className={classnames(styles.button, styles.buttonLink)}>{children}</a>)
-                }
-                
+                }  
             </Link>
         )
     }
