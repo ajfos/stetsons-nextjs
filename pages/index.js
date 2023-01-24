@@ -58,7 +58,7 @@ export default function Home() {
 
         {/* todo use songkick api, there is a key in inbox */}
         {/* {location: "The Boulevard, Wigan", date: "17/12/2021", link: "https://www.boulevard-wigan.co.uk/events/afternoon-people-wild-signs-shackites-1", linkText: "Event Info/Tickets"} */}
-        <GigList gigs={location: "The Boulevard, Wigan", date: "12/11/2022", link: "https://www.eventbrite.co.uk/e/led-into-zeppelin-tickets-247862161397", linkText: "Event Info/Tickets"} />
+        <GigList gigs={[{location: "Outpost, Liverpool", date: "16/04/2023", link: "", linkText: ""}, {location: "Old Courts, Wigan", date: "19/05/2023", link: "https://www.theoldcourts.com/shows/novelty-island-with-support-from-stetsons-electric-red-clogs-andy-stonier/", linkText: "Tickets/Info"}]} />
 
         <div className={styles.latestUpdate}>
             <div className={styles.latestUpdateText}>Until then, here's our latest video!</div>
