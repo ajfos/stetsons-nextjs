@@ -86,7 +86,7 @@ export default function Home() {
         </div>
     </div>
 
-    <div className={styles.createdBy}>Created by <a href="mailto:arniej182@hotmail.co.uk" className={styles.createdByEmail}>The Prospector</a><br />Keeps the mind keen and the gold clean.</div>
+    <div className={styles.createdBy}>Created by <a href="mailto:stetsons.npzas@simplelogin.com" className={styles.createdByEmail}>The Prospector</a><br />Keeps the mind keen and the gold clean.</div>
     </div>
   )
 }
