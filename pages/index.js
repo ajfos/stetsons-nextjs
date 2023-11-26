@@ -95,7 +95,14 @@ export default function Home() {
 
         {/* todo use songkick api, there is a key in inbox */}
         {/* {location: "The Boulevard, Wigan", date: "17/12/2021", link: "https://www.boulevard-wigan.co.uk/events/afternoon-people-wild-signs-shackites-1", linkText: "Event Info/Tickets"} */}
-        <GigList gigs={null} />
+        <GigList
+          gigs={{
+            location: "The Baliff Bar, Wigan",
+            date: "14/12/2023",
+            link: "https://www.theoldcourts.com/shows/unlocked-original-music-showcase-6/",
+            linkText: "Event Info",
+          }}
+        />
 
         <div className={styles.latestUpdate}>
           <div className={styles.latestUpdateText}>
