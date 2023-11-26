@@ -22,6 +22,7 @@ export default function Home() {
         <link
           href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap"
           rel="preload stylesheet"
+          as="stylesheet"
         />
       </Head>
 
