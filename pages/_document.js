@@ -1,6 +1,6 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
-import { GA_TAG } from '../lib/gtag'
+import { GA_TAG } from "../lib/gtag";
 
 export default class MyDocument extends Document {
   render() {
@@ -8,10 +8,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TAG}`}
-          />
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TAG}`} />
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -24,12 +21,18 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+          <link rel="icon" href="/favicon.ico" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap"
+            rel="preload stylesheet"
+          />
+          <meta name="facebook-domain-verification" content="cyzbv14ni5d3j58emjcixxnc9m3b7e" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
