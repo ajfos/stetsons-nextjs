@@ -34,7 +34,7 @@ export default function Home() {
           />
         </div>
 
-        <div className={styles.tagLine}>Three Rockin' Men Since God Knows When</div>
+        <div className={styles.tagLine}>Three Rockin&apos; Men Since God Knows When</div>
 
         <div className={styles.socialIcons}>
           <a
@@ -92,7 +92,7 @@ export default function Home() {
         <GigList gigs={null} />
 
         <div className={styles.latestUpdate}>
-          <div className={styles.latestUpdateText}>Until then, here's our latest video!</div>
+          <div className={styles.latestUpdateText}>Until then, here is our latest video!</div>
           <div className={styles.youtubeVideoHome}>
             <iframe
               width="100%"
