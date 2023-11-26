@@ -19,6 +19,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>The Stetsons Electric</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap"
+          rel="preload stylesheet"
+        />
       </Head>
 
       <main className={styles.main}>
@@ -34,7 +38,9 @@ export default function Home() {
           />
         </div>
 
-        <div className={styles.tagLine}>Three Rockin&apos; Men Since God Knows When</div>
+        <div className={styles.tagLine}>
+          Three Rockin&apos; Men Since God Knows When
+        </div>
 
         <div className={styles.socialIcons}>
           <a
@@ -92,7 +98,9 @@ export default function Home() {
         <GigList gigs={null} />
 
         <div className={styles.latestUpdate}>
-          <div className={styles.latestUpdateText}>Until then, here is our latest video!</div>
+          <div className={styles.latestUpdateText}>
+            Until then, here is our latest video!
+          </div>
           <div className={styles.youtubeVideoHome}>
             <iframe
               width="100%"
@@ -125,7 +133,10 @@ export default function Home() {
       <div className={styles.contact} id="contact">
         <div>
           Email:{" "}
-          <a href="mailto:thestetsonselectric@gmail.com" className={styles.emailLink}>
+          <a
+            href="mailto:thestetsonselectric@gmail.com"
+            className={styles.emailLink}
+          >
             thestetsonselectric@gmail.com
           </a>{" "}
           or
@@ -136,7 +147,11 @@ export default function Home() {
             href="https://www.facebook.com/thestetsonselectric/"
             target="_blank"
             rel="noopener noreferrer"
-            className={classnames(styles.socialIcon, styles.facebook, styles.footerFacebookIcon)}
+            className={classnames(
+              styles.socialIcon,
+              styles.facebook,
+              styles.footerFacebookIcon
+            )}
           >
             <FontAwesomeIcon icon={faFacebook} />
           </a>
@@ -145,7 +160,10 @@ export default function Home() {
 
       <div className={styles.createdBy}>
         Created by{" "}
-        <a href="mailto:stetsons.npzas@simplelogin.com" className={styles.createdByEmail}>
+        <a
+          href="mailto:stetsons.npzas@simplelogin.com"
+          className={styles.createdByEmail}
+        >
           The Prospector
         </a>
         <br />
