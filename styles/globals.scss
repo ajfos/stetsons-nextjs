@@ -2,20 +2,20 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Lilita One', 'Righteous', cursive, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Lilita One", "Righteous", "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-    background: linear-gradient(#f2f4fa, #e9eefa);
-    width: 100%;
-    scroll-behavior: smooth;
+  background: linear-gradient(#f2f4fa, #e9eefa);
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -28,6 +28,6 @@ a {
 }
 
 .colouredLink {
-    text-decoration: underline;
-    color: #22b2da;
+  text-decoration: underline;
+  color: #22b2da;
 }
