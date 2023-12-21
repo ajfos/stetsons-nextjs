@@ -97,14 +97,16 @@ export default function Home() {
         {/* todo use songkick api, there is a key in inbox */}
         {/* {location: "The Boulevard, Wigan", date: "17/12/2021", link: "https://www.boulevard-wigan.co.uk/events/afternoon-people-wild-signs-shackites-1", linkText: "Event Info/Tickets"} */}
         <GigList
-          gigs={[
-            {
-              location: "The Baliff Bar, Wigan",
-              date: "14/12/2023",
-              link: "https://www.theoldcourts.com/shows/unlocked-original-music-showcase-6/",
-              linkText: "Event Info",
-            },
-          ]}
+          gigs={
+            [
+              // {
+              //   location: "The Baliff Bar, Wigan",
+              //   date: "14/12/2023",
+              //   link: "https://www.theoldcourts.com/shows/unlocked-original-music-showcase-6/",
+              //   linkText: "Event Info",
+              // },
+            ]
+          }
         />
 
         <div className={styles.latestUpdate}>
@@ -112,7 +114,7 @@ export default function Home() {
             Until then, here is our latest video!
           </div>
           <div className={styles.youtubeVideoHome}>
-            <iframe
+            {/* <iframe
               width="100%"
               height="315"
               src="https://www.youtube.com/embed/AEMNEekrEg8"
@@ -120,6 +122,15 @@ export default function Home() {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+            ></iframe> */}
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/mroanEeRBuQ?si=9OFhgQMEvMjmvfHF"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
             ></iframe>
           </div>
           <div className={styles.latestUpdateText}>
