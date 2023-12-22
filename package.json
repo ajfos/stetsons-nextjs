@@ -9,16 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.3",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@stripe/react-stripe-js": "^2.4.0",
+    "@stripe/stripe-js": "^2.2.2",
     "classnames": "^2.2.6",
-    "sass": "^1.32.8"
+    "next": "^14.0.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.32.8",
+    "stripe": "^14.10.0"
   },
   "devDependencies": {
     "eslint": "^8",
