@@ -119,7 +119,7 @@ export const releases = [
     spotify: null,
     appleMusic: null,
     soundcloud: null,
-    bandcamp: null,
+    bandcamp: "https://stetsons.bandcamp.com/track/glasses-for-christmas",
     isFree: true,
     youtube: "https://www.youtube.com/watch?v=mroanEeRBuQ",
     description:
