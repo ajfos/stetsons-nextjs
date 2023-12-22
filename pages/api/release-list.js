@@ -28,10 +28,8 @@ const releases = [
     artwork: "/two_tickets.jpg",
     id: 3,
     spotify: "https://open.spotify.com/album/1q9a50qiTTFxOGbrBl5URv",
-    soundcloud:
-      "https://soundcloud.com/the-stetsons-electric/two-tickets-to-stetsonsmania",
-    bandcamp:
-      "https://stetsons.bandcamp.com/track/two-tickets-to-stetsonsmania",
+    soundcloud: "https://soundcloud.com/the-stetsons-electric/two-tickets-to-stetsonsmania",
+    bandcamp: "https://stetsons.bandcamp.com/track/two-tickets-to-stetsonsmania",
   },
   {
     name: "No Ball Games",
@@ -56,8 +54,7 @@ const releases = [
     year: 2018,
     artwork: "/dirty_ripper.jpg",
     id: 6,
-    spotify:
-      "https://open.spotify.com/track/0G37AtkdWAryWOCLEg6HJL?si=Sxz3QmPmQ8W2r-MrbrGKag",
+    spotify: "https://open.spotify.com/track/0G37AtkdWAryWOCLEg6HJL?si=Sxz3QmPmQ8W2r-MrbrGKag",
     soundcloud: "https://soundcloud.com/the-stetsons-electric/dirty-ripper",
     bandcamp: "https://stetsons.bandcamp.com/track/dirty-ripper",
   },
@@ -66,8 +63,7 @@ const releases = [
     year: 2018,
     artwork: "/japan.jpg",
     id: 7,
-    spotify:
-      "https://open.spotify.com/album/1BApXcvyjZ6C8V9bF8V585?si=jbMOR-3-ST-2FkdlQBBmfg",
+    spotify: "https://open.spotify.com/album/1BApXcvyjZ6C8V9bF8V585?si=jbMOR-3-ST-2FkdlQBBmfg",
     soundcloud: null,
     bandcamp: null,
   },
@@ -76,8 +72,7 @@ const releases = [
     year: 2018,
     artwork: "/last_chance.jpg",
     id: 8,
-    spotify:
-      "https://open.spotify.com/album/6wvPPPqH0TYQBK3APEYVVe?si=9bnqUgrCTdiDwdGaoxZ0VQ",
+    spotify: "https://open.spotify.com/album/6wvPPPqH0TYQBK3APEYVVe?si=9bnqUgrCTdiDwdGaoxZ0VQ",
     soundcloud: null,
     bandcamp: null,
   },
@@ -86,8 +81,7 @@ const releases = [
     year: 2021,
     artwork: "/nanas_boy.jpg",
     id: 9,
-    spotify:
-      "https://open.spotify.com/track/5FxnTRzsWi0q5Z0Z6TTIxJ?si=eac844ceae1547c8",
+    spotify: "https://open.spotify.com/track/5FxnTRzsWi0q5Z0Z6TTIxJ?si=eac844ceae1547c8",
     soundcloud: "https://soundcloud.com/the-stetsons-electric/nanas-boy",
     bandcamp: null,
   },

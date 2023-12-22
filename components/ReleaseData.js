@@ -5,8 +5,10 @@ export const releases = [
     artwork: "/das_giddy.jpg",
     id: 1,
     spotify: "https://open.spotify.com/album/1d0rMgWlr6HsrHU9aUVLky",
+    appleMusic: "https://music.apple.com/gb/album/das-giddy-ep/924919938",
     soundcloud: "https://soundcloud.com/the-stetsons-electric/sets/das-giddy",
     bandcamp: "https://stetsons.bandcamp.com/album/das-giddy",
+    youtube: null,
     description:
       "We got giddy recording this. After winning a battle of the bands, we won £500, spent it all on recording and even had time left to make the intro track.",
   },
@@ -16,9 +18,11 @@ export const releases = [
     artwork: "/shotman.jpg",
     id: 2,
     spotify: "",
+    appleMusic: null,
     soundcloud: "",
     bandcamp: "https://stetsons.bandcamp.com/track/the-shotman",
     isFree: true,
+    youtube: null,
     description: "A song about a dear friend who ordered far too many shots.",
   },
   {
@@ -27,12 +31,11 @@ export const releases = [
     artwork: "/two_tickets.jpg",
     id: 3,
     spotify: "https://open.spotify.com/album/1q9a50qiTTFxOGbrBl5URv",
-    soundcloud:
-      "https://soundcloud.com/the-stetsons-electric/two-tickets-to-stetsonsmania",
-    bandcamp:
-      "https://stetsons.bandcamp.com/track/two-tickets-to-stetsonsmania",
-    description:
-      "A song about getting two tickets to watch our own band, the best you'll ever see.",
+    appleMusic: "https://music.apple.com/gb/album/two-tickets-to-stetsonsmania/1138738130?i=1138738215",
+    soundcloud: "https://soundcloud.com/the-stetsons-electric/two-tickets-to-stetsonsmania",
+    bandcamp: "https://stetsons.bandcamp.com/track/two-tickets-to-stetsonsmania",
+    youtube: "https://www.youtube.com/watch?v=YfEhlCKvv7U",
+    description: "A song about getting two tickets to watch our own band, the best you'll ever see.",
   },
   {
     name: "No Ball Games",
@@ -40,10 +43,11 @@ export const releases = [
     artwork: "/no_ball_games.jpg",
     id: 4,
     spotify: "https://open.spotify.com/album/6MCS47qmmf6MvQZ0QM5Pz1",
+    appleMusic: null,
     soundcloud: "https://soundcloud.com/the-stetsons-electric/no-ball-games",
     bandcamp: "https://stetsons.bandcamp.com/track/no-ball-games",
-    description:
-      "You'll have to ask about this one. Seems to have undertones from a relationship.",
+    youtube: "https://music.apple.com/gb/album/no-ball-games/1208498442?i=1208499105",
+    description: "You'll have to ask about this one. Seems to have undertones from a relationship.",
   },
   {
     name: "Oh! Glittery Stetson",
@@ -51,8 +55,10 @@ export const releases = [
     artwork: "/glittery_stetson.jpg",
     id: 5,
     spotify: "https://open.spotify.com/track/3Sm67izvChtBVlrAIPfPDv",
+    appleMusic: "https://music.apple.com/gb/album/oh-glittery-stetson-single/1238384431",
     soundcloud: "",
     bandcamp: "https://stetsons.bandcamp.com/track/oh-glittery-stetson",
+    youtube: "https://www.youtube.com/watch?v=SSYarVmBJIs",
     description:
       "Tommy 2 found a hat in a taxi. It was glittery and a stetson. Rumour has it that wearing this on a night out causes fights, although this is unconfirmed.",
   },
@@ -61,10 +67,11 @@ export const releases = [
     year: 2018,
     artwork: "/dirty_ripper.jpg",
     id: 6,
-    spotify:
-      "https://open.spotify.com/track/0G37AtkdWAryWOCLEg6HJL?si=Sxz3QmPmQ8W2r-MrbrGKag",
+    spotify: "https://open.spotify.com/track/0G37AtkdWAryWOCLEg6HJL?si=Sxz3QmPmQ8W2r-MrbrGKag",
+    appleMusic: "https://music.apple.com/gb/album/dirty-ripper/1341869564?i=1341869589",
     soundcloud: "https://soundcloud.com/the-stetsons-electric/dirty-ripper",
     bandcamp: "https://stetsons.bandcamp.com/track/dirty-ripper",
+    youtube: "https://www.youtube.com/watch?v=v818dE1qxYU",
     description: "The riff was a dirty ripper, and so the song came to be.",
   },
   {
@@ -72,10 +79,11 @@ export const releases = [
     year: 2018,
     artwork: "/japan.jpg",
     id: 7,
-    spotify:
-      "https://open.spotify.com/album/1BApXcvyjZ6C8V9bF8V585?si=jbMOR-3-ST-2FkdlQBBmfg",
+    spotify: "https://open.spotify.com/album/1BApXcvyjZ6C8V9bF8V585?si=jbMOR-3-ST-2FkdlQBBmfg",
+    appleMusic: "https://music.apple.com/gb/album/japan/1363294065?i=1363294262",
     soundcloud: null,
     bandcamp: null,
+    youtube: null,
     description:
       "この曲は日本についてないけど、「Tommy -1」は他の人を考えているかもしれませんでした。　「Tommy -1」は家族と日本に行ったことがありますが、「The Prospector」は「Tommy 2」と一緒に日本に行きました。　とても楽しかったです。",
   },
@@ -84,34 +92,37 @@ export const releases = [
     year: 2018,
     artwork: "/last_chance.jpg",
     id: 8,
-    spotify:
-      "https://open.spotify.com/album/6wvPPPqH0TYQBK3APEYVVe?si=9bnqUgrCTdiDwdGaoxZ0VQ",
+    spotify: "https://open.spotify.com/album/6wvPPPqH0TYQBK3APEYVVe?si=9bnqUgrCTdiDwdGaoxZ0VQ",
+    appleMusic: "https://music.apple.com/gb/album/last-chance/1397184283?i=1397184284",
     soundcloud: null,
     bandcamp: null,
+    youtube: null,
     description: "A lovely ballad for once, and another love song.",
   },
   {
-    name: `Nana's Boy`,
+    name: "Nana's Boy",
     year: 2021,
     artwork: "/nanas_boy.jpg",
     id: 9,
-    spotify:
-      "https://open.spotify.com/track/5FxnTRzsWi0q5Z0Z6TTIxJ?si=eac844ceae1547c8",
+    spotify: "https://open.spotify.com/track/5FxnTRzsWi0q5Z0Z6TTIxJ?si=eac844ceae1547c8",
+    appleMusic: "https://music.apple.com/gb/album/nanas-boy/1591874657?i=1591874665",
     soundcloud: "https://soundcloud.com/the-stetsons-electric/nanas-boy",
     bandcamp: null,
-    description:
-      "Ever gone to your nan's for tea to avoid your girlfriend? Thought so. (Artwork by IG: ida.ideas)",
+    youtube: null,
+    description: "Ever gone to your nan's for tea to avoid your girlfriend? Thought so. (Artwork by IG: ida.ideas)",
   },
   {
-    name: `Glasses For Christmas`,
+    name: "Glasses For Christmas",
     year: 2023,
     artwork: "/glasses_for_christmas.jpg",
     id: 10,
     spotify: null,
+    appleMusic: null,
     soundcloud: null,
     bandcamp: null,
     isFree: true,
+    youtube: "https://www.youtube.com/watch?v=mroanEeRBuQ",
     description:
-      "We had to make a Christmas song eventually. Ever lost your glasses and really miss being able to see? (they are really expensive!) Well just ask Santa for some new ones. No more Pokemon cards please.",
+      "We had to make a Christmas song eventually. Ever lost your glasses and really miss being able to see? Well just ask Santa for some new ones. No more Pokemon cards please.",
   },
 ];

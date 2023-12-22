@@ -7,13 +7,7 @@ import styles from "../../styles/Release.module.scss";
 import Head from "next/head";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSpotify,
-  faBandcamp,
-  faSoundcloud,
-  faYoutube,
-  faApple,
-} from "@fortawesome/free-brands-svg-icons";
+import { faSpotify, faBandcamp, faSoundcloud, faYoutube, faApple, faDeezer } from "@fortawesome/free-brands-svg-icons";
 import classnames from "classnames";
 import Link from "next/link";
 import Button from "../../components/Button";
@@ -41,8 +35,7 @@ const Release = () => {
           </Link>
         </div>
         <div className={styles.releaseNotWritten}>
-          Opps, we haven't written this one yet. Here's something else we made
-          instead:
+          Opps, we haven't written this one yet. Here's something else we made instead:
         </div>
         <div className={styles.youtubeVideo}>
           <iframe
@@ -112,7 +105,7 @@ const Release = () => {
           )}
           <div className={styles.releaseIcons}>
             <a
-              href="https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ"
+              href={release.spotify || "https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ"}
               target="_blank"
               rel="noopener noreferrer"
               className={classnames(styles.releaseIcon, styles.spotify)}
@@ -120,7 +113,7 @@ const Release = () => {
               <FontAwesomeIcon icon={faSpotify} />
             </a>
             <a
-              href="https://music.apple.com/gb/artist/the-stetsons-electric/924919951"
+              href={release.appleMusic || "https://music.apple.com/gb/artist/the-stetsons-electric/924919951"}
               target="_blank"
               rel="noopener noreferrer"
               className={classnames(styles.releaseIcon, styles.apple)}
@@ -128,20 +121,15 @@ const Release = () => {
               <FontAwesomeIcon icon={faApple} />
             </a>
             <a
-              href="https://www.deezer.com/en/artist/6795735"
+              href={release.deezer || "https://www.deezer.com/en/artist/6795735"}
               target="_blank"
               rel="noopener noreferrer"
               className={classnames(styles.releaseIcon, styles.deezer)}
             >
-              <Image
-                src="/deezer_logo.jpg"
-                height="50"
-                width="50"
-                alt="deezer"
-              />
+              <Image src="/deezer_logo.jpg" height="50" width="50" alt="deezer" />
             </a>
             <a
-              href="https://www.youtube.com/channel/UCn301PgyNOQEede0cEoyVaQ"
+              href={release.youtube || "https://www.youtube.com/channel/UCn301PgyNOQEede0cEoyVaQ"}
               target="_blank"
               rel="noopener noreferrer"
               className={classnames(styles.releaseIcon, styles.youtube)}
@@ -149,7 +137,7 @@ const Release = () => {
               <FontAwesomeIcon icon={faYoutube} />
             </a>
             <a
-              href="https://soundcloud.com/the-stetsons-electric"
+              href={release.soundcloud || "https://soundcloud.com/the-stetsons-electric"}
               target="_blank"
               rel="noopener noreferrer"
               className={classnames(styles.releaseIcon, styles.soundcloud)}
@@ -157,7 +145,7 @@ const Release = () => {
               <FontAwesomeIcon icon={faSoundcloud} />
             </a>
             <a
-              href="https://stetsons.bandcamp.com/"
+              href={release.bandcamp || "https://stetsons.bandcamp.com/"}
               target="_blank"
               rel="noopener noreferrer"
               className={classnames(styles.releaseIcon, styles.bandcamp)}
