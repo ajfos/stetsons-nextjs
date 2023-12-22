@@ -7,7 +7,7 @@ import styles from "../../styles/Release.module.scss";
 import Head from "next/head";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpotify, faBandcamp, faSoundcloud, faYoutube, faApple, faDeezer } from "@fortawesome/free-brands-svg-icons";
+import { faSpotify, faBandcamp, faSoundcloud, faYoutube, faApple } from "@fortawesome/free-brands-svg-icons";
 import classnames from "classnames";
 import Link from "next/link";
 import Button from "../../components/Button";
@@ -104,30 +104,37 @@ const Release = () => {
             </div>
           )}
           <div className={styles.releaseIcons}>
-            <a
-              href={release.spotify || "https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={classnames(styles.releaseIcon, styles.spotify)}
-            >
-              <FontAwesomeIcon icon={faSpotify} />
-            </a>
-            <a
-              href={release.appleMusic || "https://music.apple.com/gb/artist/the-stetsons-electric/924919951"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={classnames(styles.releaseIcon, styles.apple)}
-            >
-              <FontAwesomeIcon icon={faApple} />
-            </a>
-            <a
-              href={release.deezer || "https://www.deezer.com/en/artist/6795735"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={classnames(styles.releaseIcon, styles.deezer)}
-            >
-              <Image src="/deezer_logo.jpg" height="50" width="50" alt="deezer" />
-            </a>
+            {release.id !== 10 && (
+              <a
+                href={release.spotify || "https://open.spotify.com/artist/1EnFvfSbHqACPmunlABTBJ"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classnames(styles.releaseIcon, styles.spotify)}
+              >
+                <FontAwesomeIcon icon={faSpotify} />
+              </a>
+            )}
+            {release.id !== 10 && (
+              <a
+                href={release.appleMusic || "https://music.apple.com/gb/artist/the-stetsons-electric/924919951"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classnames(styles.releaseIcon, styles.apple)}
+              >
+                <FontAwesomeIcon icon={faApple} />
+              </a>
+            )}
+            {release.id !== 10 && (
+              <a
+                href={release.deezer || "https://www.deezer.com/en/artist/6795735"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classnames(styles.releaseIcon, styles.deezer)}
+              >
+                <Image src="/deezer_logo.jpg" height="50" width="50" alt="deezer" />
+              </a>
+            )}
+
             <a
               href={release.youtube || "https://www.youtube.com/channel/UCn301PgyNOQEede0cEoyVaQ"}
               target="_blank"
@@ -136,14 +143,17 @@ const Release = () => {
             >
               <FontAwesomeIcon icon={faYoutube} />
             </a>
-            <a
-              href={release.soundcloud || "https://soundcloud.com/the-stetsons-electric"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={classnames(styles.releaseIcon, styles.soundcloud)}
-            >
-              <FontAwesomeIcon icon={faSoundcloud} />
-            </a>
+
+            {release.id !== 10 && (
+              <a
+                href={release.soundcloud || "https://soundcloud.com/the-stetsons-electric"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classnames(styles.releaseIcon, styles.soundcloud)}
+              >
+                <FontAwesomeIcon icon={faSoundcloud} />
+              </a>
+            )}
             <a
               href={release.bandcamp || "https://stetsons.bandcamp.com/"}
               target="_blank"
