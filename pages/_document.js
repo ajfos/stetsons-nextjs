@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { Analytics } from "@vercel/analytics/react";
+
 import { GA_TAG } from "../lib/gtag";
 
 export default class MyDocument extends Document {
@@ -31,7 +31,6 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <Analytics />
         </body>
       </Html>
     );
