@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import { Analytics } from "@vercel/analytics/react";
 import { GA_TAG } from "../lib/gtag";
 
 export default class MyDocument extends Document {
@@ -8,10 +8,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TAG}`}
-          />
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TAG}`} />
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -29,14 +26,12 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap"
             rel="preload stylesheet"
           />
-          <meta
-            name="facebook-domain-verification"
-            content="cyzbv14ni5d3j58emjcixxnc9m3b7e"
-          />
+          <meta name="facebook-domain-verification" content="cyzbv14ni5d3j58emjcixxnc9m3b7e" />
         </Head>
         <body>
           <Main />
           <NextScript />
+          <Analytics />
         </body>
       </Html>
     );
