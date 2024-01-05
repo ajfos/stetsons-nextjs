@@ -1,0 +1,17 @@
+.subscribeButton {
+  width: 150px;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.fieldGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+}
