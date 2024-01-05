@@ -17,13 +17,13 @@ export default function EmailSignUpForm() {
             name="mc-embedded-subscribe-form"
             className="validate"
             target="_self"
-            novalidate=""
+            noValidate=""
           >
             <div id="mc_embed_signup_scroll">
               <h2>Subscribe to (occasional) updates </h2>
 
               <div className={styles.fieldGroup}>
-                <label for="mce-EMAIL">Email Address</label>
+                <label htmlFor="mce-EMAIL">Email Address</label>
                 <input
                   type="email"
                   name="EMAIL"
@@ -35,7 +35,7 @@ export default function EmailSignUpForm() {
                 />
               </div>
               <div className={styles.fieldGroup}>
-                <label for="mce-FNAME">First Name</label>
+                <label htmlFor="mce-FNAME">First Name</label>
                 <input
                   type="text"
                   name="FNAME"
@@ -64,8 +64,9 @@ export default function EmailSignUpForm() {
                 <input
                   type="text"
                   name="b_79c46438be0bde6988a0ff40b_95f1222419"
-                  tabindex="-1"
+                  tabIndex="-1"
                   value=""
+                  readOnly
                 />
               </div>
 
