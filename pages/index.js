@@ -17,6 +17,21 @@ import Button from "@/components/Button";
 import EmailSignUpForm from "@/components/EmailSignUpForm";
 
 export default function Home() {
+  // const [data, setData] = useState(null);
+  // const [isLoading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   fetch(
+  //     "https://api.songkick.com/api/3.0/artists/7180779/gigography.json?apikey=bbLzvMacn9Qo4vf9"
+  //   )
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setData(data);
+  //       console.log("data", data);
+  //       setLoading(false);
+  //     });
+  // }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -99,16 +114,20 @@ export default function Home() {
         {/* todo use songkick api, there is a key in inbox */}
         {/* {location: "The Boulevard, Wigan", date: "17/12/2021", link: "https://www.boulevard-wigan.co.uk/events/afternoon-people-wild-signs-shackites-1", linkText: "Event Info/Tickets"} */}
         <GigList
-          gigs={
-            [
-              // {
-              //   location: "The Baliff Bar, Wigan",
-              //   date: "14/12/2023",
-              //   link: "https://www.theoldcourts.com/shows/unlocked-original-music-showcase-6/",
-              //   linkText: "Event Info",
-              // },
-            ]
-          }
+          gigs={[
+            {
+              location: "The Baliff Bar, Wigan",
+              date: "28/03/2024",
+              link: "",
+              linkText: "",
+            },
+            {
+              location: "The Boulevard, Wigan",
+              date: "27/07/2024",
+              link: "https://www.eventbrite.co.uk/e/acdc-gb-tickets-771327139237",
+              linkText: "Tickets",
+            },
+          ]}
         />
 
         <div className={styles.latestUpdate}>
