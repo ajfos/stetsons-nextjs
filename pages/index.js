@@ -116,6 +116,12 @@ export default function Home() {
         <GigList
           gigs={[
             {
+              location: "hmv, Wigan",
+              date: "02/03/2024",
+              link: "",
+              linkText: "",
+            },
+            {
               location: "The Baliff Bar, Wigan",
               date: "28/03/2024",
               link: "",
