@@ -116,18 +116,6 @@ export default function Home() {
         <GigList
           gigs={[
             {
-              location: "hmv, Wigan",
-              date: "02/03/2024",
-              link: "",
-              linkText: "",
-            },
-            {
-              location: "The Baliff Bar, Wigan",
-              date: "28/03/2024",
-              link: "",
-              linkText: "",
-            },
-            {
               location: "The Boulevard, Wigan",
               date: "27/07/2024",
               link: "https://www.eventbrite.co.uk/e/acdc-gb-tickets-771327139237",
