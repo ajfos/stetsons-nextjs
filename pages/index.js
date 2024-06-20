@@ -56,9 +56,7 @@ export default function Home() {
           />
         </div>
 
-        <div className={styles.tagLine}>
-          Three Rockin&apos; Men Since God Knows When
-        </div>
+        <div className={styles.tagLine}>Three Rockin&apos; Men Since God Knows When</div>
 
         <div className={styles.socialIcons}>
           <a
@@ -124,6 +122,20 @@ export default function Home() {
           ]}
         />
 
+        <div className={styles.banner}>
+          <Image
+            src="/szechuan-chicken-soon.png"
+            alt="Szechuan Chicken Out Soon"
+            layout="responsive"
+            unoptimized={false}
+            objectFit="cover"
+            objectPosition="center center"
+            priority={false}
+            height={200}
+            width={400}
+          />
+        </div>
+
         <div className={styles.latestUpdate}>
           <div className={styles.latestUpdateText}>
             {/* Until then, here is our latest video! */}
@@ -178,10 +190,7 @@ export default function Home() {
       <div className={styles.contact} id="contact">
         <div>
           Contact us via email:{" "}
-          <a
-            href="mailto:thestetsonselectric@gmail.com"
-            className={styles.emailLink}
-          >
+          <a href="mailto:thestetsonselectric@gmail.com" className={styles.emailLink}>
             thestetsonselectric@gmail.com
           </a>{" "}
           or
@@ -192,11 +201,7 @@ export default function Home() {
             href="https://www.facebook.com/thestetsonselectric/"
             target="_blank"
             rel="noopener noreferrer"
-            className={classnames(
-              styles.socialIcon,
-              styles.facebook,
-              styles.footerFacebookIcon
-            )}
+            className={classnames(styles.socialIcon, styles.facebook, styles.footerFacebookIcon)}
           >
             <FontAwesomeIcon icon={faFacebook} />
           </a>
@@ -205,10 +210,7 @@ export default function Home() {
 
       <div className={styles.createdBy}>
         Created by{" "}
-        <a
-          href="mailto:stetsons.npzas@simplelogin.com"
-          className={styles.createdByEmail}
-        >
+        <a href="mailto:stetsons.npzas@simplelogin.com" className={styles.createdByEmail}>
           The Prospector
         </a>
         <br />
