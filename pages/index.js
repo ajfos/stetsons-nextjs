@@ -11,6 +11,7 @@ import {
   faBandcamp,
   faYoutube,
   faInstagram,
+  faApple,
 } from "@fortawesome/free-brands-svg-icons";
 import classnames from "classnames";
 import Button from "@/components/Button";
@@ -66,6 +67,14 @@ export default function Home() {
             className={classnames(styles.socialIcon, styles.spotify)}
           >
             <FontAwesomeIcon icon={faSpotify} />
+          </a>
+          <a
+            href={"https://music.apple.com/gb/artist/the-stetsons-electric/924919951"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classnames(styles.socialIcon, styles.apple)}
+          >
+            <FontAwesomeIcon icon={faApple} />
           </a>
           <a
             href="https://www.facebook.com/thestetsonselectric/"

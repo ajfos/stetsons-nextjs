@@ -91,6 +91,15 @@
   margin-top: -2px;
 }
 
+.apple {
+  color: black;
+  font-size: 45px;
+  margin-top: -10px;
+  @media (max-width: 600px) {
+    margin-top: -10px;
+  }
+}
+
 .contact {
   display: flex;
   justify-content: space-around;
