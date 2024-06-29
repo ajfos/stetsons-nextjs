@@ -14,7 +14,7 @@ import {
   faApple,
 } from "@fortawesome/free-brands-svg-icons";
 import classnames from "classnames";
-import Button from "@/components/Button";
+import { releases } from "@/components/ReleaseData";
 import EmailSignUpForm from "@/components/EmailSignUpForm";
 
 export default function Home() {
@@ -131,7 +131,7 @@ export default function Home() {
           ]}
         />
 
-        <div className={styles.banner}>
+        {/* <div className={styles.banner}>
           <Image
             src="/szechuan-chicken-soon.png"
             alt="Szechuan Chicken Out Soon"
@@ -143,18 +143,13 @@ export default function Home() {
             height={200}
             width={400}
           />
-        </div>
+        </div> */}
 
         <div className={styles.latestUpdate}>
           <div className={styles.latestUpdateText}>
             {/* Until then, here is our latest video! */}
             Until then, here is our latest release! You can download it{" "}
-            <a
-              href="https://stetsons.bandcamp.com/track/glasses-for-christmas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.donwloadNowText}
-            >
+            <a href={releases[0].bandcamp} target="_blank" rel="noopener noreferrer" className={styles.donwloadNowText}>
               here.
             </a>
           </div>
@@ -171,7 +166,7 @@ export default function Home() {
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/mroanEeRBuQ?si=9OFhgQMEvMjmvfHF"
+              src="https://www.youtube.com/embed/MQ-iv0pNAHo?si=SX7hs272EWUZyWs_"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

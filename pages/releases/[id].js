@@ -144,7 +144,7 @@ const Release = () => {
               <FontAwesomeIcon icon={faYoutube} />
             </a>
 
-            {release.id !== 10 && (
+            {release.id !== 10 && release.soundcloud && (
               <a
                 href={release.soundcloud || "https://soundcloud.com/the-stetsons-electric"}
                 target="_blank"

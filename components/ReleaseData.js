@@ -125,4 +125,17 @@ export const releases = [
     description:
       "We had to make a Christmas song eventually. Ever lost your glasses and really miss being able to see? Well just ask Santa for some new ones. No more Pokemon cards please.",
   },
+  {
+    name: "Szechuan Chicken",
+    year: 2024,
+    artwork: "/szechuan_chicken.jpg",
+    id: 11,
+    spotify: "https://open.spotify.com/track/7A7wP03DQlMh6zcZYxA8Hi?si=5ce397a964ef4b5e",
+    appleMusic: "https://music.apple.com/us/album/szechuan-chicken/1754124358?i=1754124362&app=itunes",
+    soundcloud: null,
+    bandcamp: "https://stetsons.bandcamp.com/track/szechuan-chicken",
+    isFree: false,
+    youtube: "https://www.youtube.com/watch?v=MQ-iv0pNAHo",
+    description: "Ever had some chicken wings that were just so dry they deserved a 1 star review? We have.",
+  },
 ];
