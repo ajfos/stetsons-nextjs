@@ -149,7 +149,12 @@ export default function Home() {
           <div className={styles.latestUpdateText}>
             {/* Until then, here is our latest video! */}
             Until then, here is our latest release! You can download it{" "}
-            <a href={releases[0].bandcamp} target="_blank" rel="noopener noreferrer" className={styles.donwloadNowText}>
+            <a
+              href={releases[releases.length - 1].bandcamp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.donwloadNowText}
+            >
               here.
             </a>
           </div>
