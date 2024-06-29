@@ -149,7 +149,7 @@ export default function Home() {
         <div className={styles.latestUpdate}>
           <div className={styles.latestUpdateText}>
             {/* Until then, here is our latest video! */}
-            Until then, here is our latest release! You find it{" "}
+            Until then, here is our latest release! You can find it{" "}
             <Link legacyBehavior href="/szechuan">
               <a className={styles.donwloadNowText}>here.</a>
             </Link>
