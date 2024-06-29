@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import styles from "../styles/redirectpage.module.scss";
+import styles from "../styles/Redirectpage.module.scss";
 
 export default function Szechuan() {
   useEffect(() => {
