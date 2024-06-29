@@ -169,6 +169,7 @@
 .donwloadNowText {
   text-decoration: underline;
   color: #22b2da;
+  cursor: pointer;
   &:hover {
     color: #ff4e0c;
     transition-property: color;

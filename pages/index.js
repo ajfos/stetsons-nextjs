@@ -16,6 +16,7 @@ import {
 import classnames from "classnames";
 import { releases } from "@/components/ReleaseData";
 import EmailSignUpForm from "@/components/EmailSignUpForm";
+import Link from "next/link";
 
 export default function Home() {
   // const [data, setData] = useState(null);
@@ -148,15 +149,10 @@ export default function Home() {
         <div className={styles.latestUpdate}>
           <div className={styles.latestUpdateText}>
             {/* Until then, here is our latest video! */}
-            Until then, here is our latest release! You can download it{" "}
-            <a
-              href={releases[releases.length - 1].bandcamp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.donwloadNowText}
-            >
-              here.
-            </a>
+            Until then, here is our latest release! You find it{" "}
+            <Link legacyBehavior href="/szechuan">
+              <a className={styles.donwloadNowText}>here.</a>
+            </Link>
           </div>
           <div className={styles.youtubeVideoHome}>
             {/* <iframe
