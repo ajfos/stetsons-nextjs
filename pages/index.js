@@ -129,6 +129,12 @@ export default function Home() {
               link: "https://www.eventbrite.co.uk/e/acdc-gb-tickets-771327139237",
               linkText: "Tickets",
             },
+            {
+              location: "The Lychgate, Standish",
+              date: "30/08/2024",
+              link: null,
+              linkText: "",
+            },
           ]}
         />
 
