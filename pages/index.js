@@ -142,7 +142,7 @@ export default function Home() {
               linkText: "",
             },
             {
-              location: "The Boulevard, Wigan",
+              location: "The Boulevard, Wigan (w/ AC/DC GB)",
               date: "29/03/2025",
               link: "https://www.eventbrite.co.uk/e/acdc-gb-tickets-771327139237",
               linkText: "Tickets",
