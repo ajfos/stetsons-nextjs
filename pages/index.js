@@ -124,16 +124,28 @@ export default function Home() {
         <GigList
           gigs={[
             {
-              location: "The Boulevard, Wigan",
-              date: "27/07/2024",
-              link: "https://www.eventbrite.co.uk/e/acdc-gb-tickets-771327139237",
-              linkText: "Tickets",
-            },
-            {
               location: "The Lychgate, Standish",
               date: "30/08/2024",
               link: null,
               linkText: "",
+            },
+            {
+              location: "Chorley Live (Venue TBC), Chorley",
+              date: "04/10/2024",
+              link: "https://chorleylive.com/",
+              linkText: "Info",
+            },
+            {
+              location: "The Boulevard, Wigan",
+              date: "06/12/2024",
+              link: null,
+              linkText: "",
+            },
+            {
+              location: "The Boulevard, Wigan",
+              date: "29/03/2025",
+              link: "https://www.eventbrite.co.uk/e/acdc-gb-tickets-771327139237",
+              linkText: "Tickets",
             },
           ]}
         />
