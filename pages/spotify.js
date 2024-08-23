@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpotify, faYoutube, faApple } from "@fortawesome/free-brands-svg-icons";
 import classnames from "classnames";
 import { useEffect } from "react";
+import Head from "next/head";
 
 export default function SpotifyLanding() {
   useEffect(() => {
@@ -28,6 +29,15 @@ export default function SpotifyLanding() {
   }, []);
   return (
     <div className={styles.container}>
+      <Head>
+        <title>The Stetsons Electric</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&display=swap"
+          rel="preload stylesheet"
+          as="stylesheet"
+        />
+      </Head>
+
       <div className={styles.main}>
         <div className={styles.logo}>
           <Image
