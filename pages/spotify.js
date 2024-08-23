@@ -1,17 +1,9 @@
 import styles from "../styles/Spotify.module.scss";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faFacebook,
-  faSpotify,
-  faBandcamp,
-  faYoutube,
-  faInstagram,
-  faApple,
-} from "@fortawesome/free-brands-svg-icons";
+import { faSpotify, faYoutube, faApple } from "@fortawesome/free-brands-svg-icons";
 import classnames from "classnames";
-import Head from "next/head";
+import { useEffect } from "react";
 
 export default function SpotifyLanding() {
   useEffect(() => {
