@@ -24,7 +24,7 @@ export default function SpotifyLanding() {
       s = b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t, s);
     })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-    fbq("init", "8302144009851493");
+    fbq("init", "1505838829614490");
     fbq("track", "PageView");
   }, []);
   return (
