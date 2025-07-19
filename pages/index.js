@@ -122,32 +122,7 @@ export default function Home() {
         {/* todo use songkick api, there is a key in inbox */}
         {/* {location: "The Boulevard, Wigan", date: "17/12/2021", link: "https://www.boulevard-wigan.co.uk/events/afternoon-people-wild-signs-shackites-1", linkText: "Event Info/Tickets"} */}
         <GigList
-          gigs={[
-            {
-              location: "The Lychgate, Standish",
-              date: "30/08/2024",
-              link: null,
-              linkText: "",
-            },
-            {
-              location: "Chorley Live (Venue TBC), Chorley",
-              date: "04/10/2024",
-              link: "https://chorleylive.com/",
-              linkText: "Info",
-            },
-            {
-              location: "The Boulevard, Wigan",
-              date: "06/12/2024",
-              link: null,
-              linkText: "",
-            },
-            {
-              location: "The Boulevard, Wigan (w/ AC/DC GB)",
-              date: "29/03/2025",
-              link: "https://www.eventbrite.co.uk/e/acdc-gb-tickets-771327139237",
-              linkText: "Tickets",
-            },
-          ]}
+          gigs={[]}
         />
 
         {/* <div className={styles.banner}>
