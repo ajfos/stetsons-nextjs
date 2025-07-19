@@ -3,7 +3,7 @@ import GigItem from './GigItem';
 
 export default function GigList ({ gigs }) {
 
-    if(!gigs || gigs.length < 0) {
+    if(!gigs || gigs.length <= 0) {
         return (
             <div className={styles.gigList}>
                 <div className={styles.header}>No Upcoming Events</div>
